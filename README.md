@@ -15,6 +15,7 @@ Inspired by **[Andres Freund's](https://github.com/anarazel)** discovery of a 50
 | `03-gnu-linker/` | Manual linking with GNU Linker (`ld`) |
 | `04-gnu-ifunc/` | Dynamic function dispatch via GNU IFUNC |
 | `05-elf-analysis/` | ELF binary inspection with `readelf` & `objdump` |
+| `06-dynamic-linking/` | Runtime function hooking via `LD_PRELOAD` |
 
 ---
 
@@ -31,6 +32,7 @@ Inspired by **[Andres Freund's](https://github.com/anarazel)** discovery of a 50
 - `ld` directly requires manual `_start` entry point — `gcc` wraps this automatically via `crt1.o`, `crti.o`, `crtn.o`.
 - GNU IFUNC resolves function dispatch at runtime based on CPU capabilities.
 - Autotools `AM_INIT_AUTOMAKE([foreign])` flag bypasses GNU standard file requirements (`AUTHORS`, `ChangeLog`, etc).
+- `LD_PRELOAD` allows shared libraries to override any function at runtime without modifying the target binary.
 
 ---
 
