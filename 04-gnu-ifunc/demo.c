@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include "demo.h"
 
-void standard_algorithm(void) {
+void stdAlgorithm(void) {
     printf("Standard fallback algorithm\n");
 }
 
-void optimized_algorithm(void) {
+void optAlgorithm(void) {
     printf("CPU-optimized high-performance path\n");
 }
 
-static void (*resolve_greet(void))(void) {
-    return optimized_algorithm;
+static void (*res_greet(void))(void) {
+    return optAlgorithm;
 }
 
-void dynamic_greet(void) __attribute__((ifunc("resolve_greet")));
+void dyngreet(void) __attribute__((ifunc("res_greet")));

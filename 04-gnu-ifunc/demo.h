@@ -1,8 +1,8 @@
 #ifndef DEMO_H
 #define DEMO_H
 
-void standard_algorithm(void);
-void optimized_algorithm(void);
-void dynamic_greet(void);
+void stdAlgorithm(void);
+void optAlgorithm(void);
+void dynGreet(void);
 
 #endif

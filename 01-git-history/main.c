@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int main() {
-    printf("git history added");
+    printf("Git history added");
     return 0;
 }
