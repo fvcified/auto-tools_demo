@@ -1,5 +1,5 @@
-#ifndef FUNCTION.H
-#define FUNCTION.H
+#ifndef FUNCTION_H
+#define FUNCTION_H
 
 void greet(void);
 
