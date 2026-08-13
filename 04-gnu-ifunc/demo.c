@@ -13,4 +13,4 @@ static void (*res_greet(void))(void) {
     return optAlgorithm;
 }
 
-void dyngreet(void) __attribute__((ifunc("res_greet")));
+void dynGreet(void) __attribute__((ifunc("res_greet")));

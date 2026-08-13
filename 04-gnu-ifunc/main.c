@@ -1,6 +1,6 @@
 #include "demo.h"
 
 int main(void) {
-    dynamic_greet();
+    dynGreet();
     return 0;
 }
