@@ -14,6 +14,7 @@ Inspired by **[Andres Freund's](https://github.com/anarazel)** discovery of a 50
 | `02-autotools-m4/` | M4 Macros & Autotools build automation |
 | `03-gnu-linker/` | Manual linking with GNU Linker (`ld`) |
 | `04-gnu-ifunc/` | Dynamic function dispatch via GNU IFUNC |
+| `05-elf-analysis/` | ELF binary inspection with `readelf` & `objdump` |
 
 ---
 
