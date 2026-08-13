@@ -1,4 +1,4 @@
-# 🛠️ Module 02: GNU Autotools & M4 Macro Automation
+# Module 02: GNU Autotools & M4 Macro Automation
 
 This module demonstrates how GNU Autotools uses M4 Macros to inspect
 the system environment and generate portable `./configure` scripts.
@@ -6,7 +6,7 @@ the system environment and generate portable `./configure` scripts.
 This is the exact build system used by XZ Utils — understanding it
 reveals how the backdoor was injected at the build configuration stage.
 
-## 📁 Files
+## Files
 
 | File | Purpose |
 |------|---------|
@@ -14,7 +14,7 @@ reveals how the backdoor was injected at the build configuration stage.
 | `Makefile.am` | Automake input — defines what to build |
 | `main.c` | Demo program |
 
-## 🚀 How to Run
+## How to Run
 
 ```bash
 aclocal
