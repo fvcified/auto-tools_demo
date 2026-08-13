@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int main() {
-    printf("Autotools configuration generated successfully!\n");
+    printf("autotools configuration generated\n");
     return 0;
 }
