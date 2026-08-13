@@ -20,8 +20,8 @@ gcc main.c -o demo
 git log --oneline
 
 # See what changed in a specific commit
-git show <commit-hash>
+git show <commit_hash>
 
 # Compare two commits
-git diff <hash-a> <hash-b>
+git diff <hash_a> <hash_b>
 ```

@@ -20,7 +20,7 @@ Inspired by **[Andres Freund's](https://github.com/anarazel)** discovery of a 50
 ## Concepts Explored
 
 - **Dual-Use Technology**: How performance tools (`IFUNC`, build macros) work in legitimate workflows vs. exploitation mechanics.
-- **Build-Time Mechanics**: Source → preprocessor → compiler → linker → execution.
+- **Build-Time Mechanics**: Source -> preprocessor -> compiler -> linker -> execution.
 - **Supply Chain Awareness**: Understanding what happens beneath `./configure && make`.
 
 ---
