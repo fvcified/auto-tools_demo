@@ -1,15 +1,15 @@
-# 🔍 Low-Level Linux Mechanics & Dual-Use Tools
+# Low-Level Linux Mechanics & Dual-Use Tools
 
 This repository contains practical experiment modules exploring Linux build systems, linkers, and low-level function dispatch mechanics.
 
-Inspired by **Andres Freund's** discovery of a 500ms latency anomaly during the XZ Utils supply chain incident (CVE-2024-3094).
+Inspired by **[Andres Freund's](https://github.com/anarazel)** discovery of a 500ms latency anomaly during the XZ Utils supply chain incident (CVE-2024-3094).
 
 ---
 
-## 📂 Modules
+## Modules
 
 | Module | Topic |
-|--------|-------|
+| -------- | ------- |
 | `01-git-history/` | Transparent code tracking via Git |
 | `02-autotools-m4/` | M4 Macros & Autotools build automation |
 | `03-gnu-linker/` | Manual linking with GNU Linker (`ld`) |
@@ -17,7 +17,7 @@ Inspired by **Andres Freund's** discovery of a 500ms latency anomaly during the 
 
 ---
 
-## 🎯 Concepts Explored
+## Concepts Explored
 
 - **Dual-Use Technology**: How performance tools (`IFUNC`, build macros) work in legitimate workflows vs. exploitation mechanics.
 - **Build-Time Mechanics**: Source → preprocessor → compiler → linker → execution.
@@ -25,7 +25,7 @@ Inspired by **Andres Freund's** discovery of a 500ms latency anomaly during the 
 
 ---
 
-## 🔬 Key Findings
+## Key Findings
 
 - `ld` directly requires manual `_start` entry point — `gcc` wraps this automatically via `crt1.o`, `crti.o`, `crtn.o`.
 - GNU IFUNC resolves function dispatch at runtime based on CPU capabilities.

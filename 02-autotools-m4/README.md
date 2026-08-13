@@ -9,7 +9,7 @@ reveals how the backdoor was injected at the build configuration stage.
 ## Files
 
 | File | Purpose |
-|------|---------|
+| ------ | --------- |
 | `configure.ac` | M4 macro input — defines build requirements |
 | `Makefile.am` | Automake input — defines what to build |
 | `main.c` | Demo program |
@@ -25,7 +25,7 @@ make
 ./autotools_demo
 ```
 
-## 🔍 Key Insight
+## Key Insight
 
 `AM_INIT_AUTOMAKE([foreign])` — the `foreign` flag bypasses GNU standard
 file requirements (AUTHORS, ChangeLog, NEWS, README).

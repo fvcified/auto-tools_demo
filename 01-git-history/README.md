@@ -6,14 +6,14 @@ enabling full auditability of who changed what and when.
 This is the exact capability Andres Freund relied on when investigating
 the XZ Utils backdoor — tracing suspicious commits through git log and diff.
 
-## 🚀 Run
+## Run
 
 ```bash
 gcc main.c -o demo
 ./demo
 ```
 
-## 🔍 Key Commands
+## Key Commands
 
 ```bash
 # View full commit history
