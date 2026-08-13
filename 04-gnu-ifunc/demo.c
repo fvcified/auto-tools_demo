@@ -2,11 +2,11 @@
 #include "demo.h"
 
 void standard_algorithm(void) {
-    printf("[IFUNC] Executing standard fallback algorithm.\n");
+    printf("Standard fallback algorithm\n");
 }
 
 void optimized_algorithm(void) {
-    printf("[IFUNC] Executing CPU-optimized high-performance path!\n");
+    printf("CPU-optimized high-performance path\n");
 }
 
 static void (*resolve_greet(void))(void) {

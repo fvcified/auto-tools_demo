@@ -1,5 +1,5 @@
-#ifndef DEMO.H
-#define DEMO.H
+#ifndef DEMO_H
+#define DEMO_H
 
 void standard_algorithm(void);
 void optimized_algorithm(void);
