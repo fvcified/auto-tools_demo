@@ -10,10 +10,10 @@ Inspired by **Andres Freund's** discovery of a 500ms latency anomaly during the 
 
 | Module | Topic | Status |
 |--------|-------|--------|
-| `01-git-history/` | Transparent code tracking via Git | ✅ |
-| `02-autotools-m4/` | M4 Macros & Autotools build automation | ✅ |
-| `03-gnu-linker/` | Manual linking with GNU Linker (`ld`) | ✅ |
-| `04-gnu-ifunc/` | Dynamic function dispatch via GNU IFUNC | ✅ |
+| `01-git-history/` | Transparent code tracking via Git |
+| `02-autotools-m4/` | M4 Macros & Autotools build automation |
+| `03-gnu-linker/` | Manual linking with GNU Linker (`ld`) |
+| `04-gnu-ifunc/` | Dynamic function dispatch via GNU IFUNC |
 
 ---
 
