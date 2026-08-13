@@ -1,0 +1,14 @@
+Makefile
+Makefile.in
+configure
+config.status
+config.log
+autom4te.cache/
+.deps/
+*.o
+autotools_demo
+compile
+depcomp
+install-sh
+missing
+INSTALL
