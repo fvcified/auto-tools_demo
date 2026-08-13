@@ -1,0 +1,4 @@
+*.ac linguist-language=M4
+*.am linguist-language=Makefile
+aclocal.m4 linguist-generated=true
+configure~ linguist-generated=true
