@@ -16,6 +16,9 @@ Inspired by **[Andres Freund's](https://github.com/anarazel)** discovery of a 50
 | `04-gnu-ifunc/` | Dynamic function dispatch via GNU IFUNC |
 | `05-elf-analysis/` | ELF binary inspection with `readelf` & `objdump` |
 | `06-dynamic-linking/` | Runtime function hooking via `LD_PRELOAD` |
+| `07-got-hooking/` | Global Offset Table hooking & function redirection |
+| `08-shared-library/` | Building and loading shared libraries (`.so`) |
+| `09-elf-sections/` | ELF section structure — `.text`, `.data`, `.bss`, `.got`, `.plt` |
 
 ---
 
@@ -33,6 +36,8 @@ Inspired by **[Andres Freund's](https://github.com/anarazel)** discovery of a 50
 - GNU IFUNC resolves function dispatch at runtime based on CPU capabilities.
 - Autotools `AM_INIT_AUTOMAKE([foreign])` flag bypasses GNU standard file requirements (`AUTHORS`, `ChangeLog`, etc).
 - `LD_PRELOAD` allows shared libraries to override any function at runtime without modifying the target binary.
+- GOT entries can be overwritten at runtime using `mprotect()` to redirect any function call silently.
+- Shared libraries are loaded automatically by the dynamic linker — a backdoored `.so` runs before any application code.
 
 ---
 
