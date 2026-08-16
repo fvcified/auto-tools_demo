@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <dlfcn.h>
 #include "demo.h"
 
 void stdAlgorithm(void) {
@@ -6,11 +7,14 @@ void stdAlgorithm(void) {
 }
 
 void optAlgorithm(void) {
-    printf("CPU-optimized high-performance path\n");
+    printf("CPU-optimized high-performance path (AVX2)\n");
 }
 
 static void (*res_greet(void))(void) {
-    return optAlgorithm;
+    if (__builtin_cpu_supports("avx2")) {
+        return optAlgorithm;
+    }
+    return stdAlgorithm;
 }
 
 void dynGreet(void) __attribute__((ifunc("res_greet")));

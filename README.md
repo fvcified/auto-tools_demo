@@ -26,11 +26,11 @@ Inspired by **[Andres Freund's](https://github.com/anarazel)** discovery of a 50
 
 ## Key Findings
 
-- `ld` directly requires manual `_start` entry point — `gcc` wraps this automatically via `crt1.o`, `crti.o`, `crtn.o`.
-- GNU IFUNC resolves function dispatch at runtime based on CPU capabilities.
+- `ld` directly requires manual `_start` entry point — `gcc` wraps this automatically via `crt1.o`, `crti.o`, `crtn.o`. Dynamic linker path varies by distro — check yours with `gcc -### main.c 2>&1 | grep dynamic-linker`.
+- GNU IFUNC resolves function dispatch at runtime via a resolver that runs **before `main()`** — legitimate use: CPU capability checks. Abusive use: silent function redirection.
 - Autotools `AM_INIT_AUTOMAKE([foreign])` flag bypasses GNU standard file requirements (`AUTHORS`, `ChangeLog`, etc).
 - `LD_PRELOAD` allows shared libraries to override any function at runtime without modifying the target binary.
 - GOT entries can be overwritten at runtime using `mprotect()` to redirect any function call silently.
 - Shared libraries are loaded automatically by the dynamic linker — a backdoored `.so` runs before any application code.
 
-> *"System security is measured not only by code quality, but also by acute attention to low-level operational details."*
+*System security is measured not only by code quality, but also by acute attention to low-level operational details.*

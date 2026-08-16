@@ -23,9 +23,10 @@ gcc demo.c main.c -o ifunc_demo
 
 ## Key Insight
 
-The resolver function `res_greet()` runs at load time and returns
-a pointer to either `stdAlgorithm` or `optAlgorithm`.
+The resolver `res_greet()` runs **once at load time** before `main()` is called.
+It checks CPU flags using `__builtin_cpu_supports("avx2")` — a legitimate
+performance pattern used in glibc itself (e.g. `memcpy`, `strlen`).
 
-In production code, the resolver checks CPU flags (e.g. AVX2, SSE4)
-to pick the fastest implementation. In the XZ backdoor, this same
-mechanism was used to silently hook `RSA_public_decrypt` in OpenSSH.
+In the XZ backdoor, the same mechanism ran a resolver that checked for a
+**specific RSA key structure** instead of CPU flags — silently redirecting
+`RSA_public_decrypt` to the attacker's function before any SSH authentication occurred.
