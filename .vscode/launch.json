@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/codeStuff/lowLvPlayground/01-git-history",
-      "program": "c:/codeStuff/lowLvPlayground/01-git-history/build/Debug/outDebug",
+      "cwd": "c:/codeStuff/lowLvPlayground/01-git_history",
+      "program": "c:/codeStuff/lowLvPlayground/01-git_history/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

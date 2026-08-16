@@ -8,15 +8,15 @@ Inspired by **[Andres Freund's](https://github.com/anarazel)** discovery of a 50
 
 | Module | Topic |
 | -------- | ------- |
-| `01-git-history/` | Transparent code tracking via Git |
-| `02-autotools-m4/` | M4 Macros & Autotools build automation |
-| `03-gnu-linker/` | Manual linking with GNU Linker (`ld`) |
-| `04-gnu-ifunc/` | Dynamic function dispatch via GNU IFUNC |
-| `05-elf-analysis/` | ELF binary inspection with `readelf` & `objdump` |
-| `06-dynamic-linking/` | Runtime function hooking via `LD_PRELOAD` |
-| `07-got-hooking/` | Global Offset Table hooking & function redirection |
-| `08-shared-library/` | Building and loading shared libraries (`.so`) |
-| `09-elf-sections/` | ELF section structure — `.text`, `.data`, `.bss`, `.got`, `.plt` |
+| `01-git_history/` | Transparent code tracking via Git |
+| `02-autotools_m4/` | M4 Macros & Autotools build automation |
+| `03-gnu_linker/` | Manual linking with GNU Linker (`ld`) |
+| `04-gnu_ifunc/` | Dynamic function dispatch via GNU IFUNC |
+| `05-elf_analysis/` | ELF binary inspection with `readelf` & `objdump` |
+| `06-dynamic_linking/` | Runtime function hooking via `LD_PRELOAD` |
+| `07-got_hooking/` | Global Offset Table hooking & function redirection |
+| `08-shared_library/` | Building and loading shared libraries (`.so`) |
+| `09-elf_sections/` | ELF section structure — `.text`, `.data`, `.bss`, `.got`, `.plt` |
 
 ## Concepts Explored
 
