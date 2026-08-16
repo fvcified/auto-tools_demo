@@ -33,4 +33,6 @@ Inspired by **[Andres Freund's](https://github.com/anarazel)** discovery of a 50
 - GOT entries can be overwritten at runtime using `mprotect()` to redirect any function call silently.
 - Shared libraries are loaded automatically by the dynamic linker — a backdoored `.so` runs before any application code.
 
+---
+
 *System security is measured not only by code quality, but also by acute attention to low-level operational details.*
