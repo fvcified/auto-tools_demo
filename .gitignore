@@ -1,0 +1,7 @@
+*.o
+*.so
+demo
+result
+ifunc_demo
+got_demo
+autotools_demo
