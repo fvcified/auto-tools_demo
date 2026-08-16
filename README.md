@@ -4,8 +4,6 @@ This repository contains practical experiment modules exploring Linux build syst
 
 Inspired by **[Andres Freund's](https://github.com/anarazel)** discovery of a 500ms latency anomaly during the XZ Utils supply chain incident (CVE-2024-3094).
 
----
-
 ## Modules
 
 | Module | Topic |
@@ -20,15 +18,11 @@ Inspired by **[Andres Freund's](https://github.com/anarazel)** discovery of a 50
 | `08-shared-library/` | Building and loading shared libraries (`.so`) |
 | `09-elf-sections/` | ELF section structure — `.text`, `.data`, `.bss`, `.got`, `.plt` |
 
----
-
 ## Concepts Explored
 
 - **Dual-Use Technology**: How performance tools (`IFUNC`, build macros) work in legitimate workflows vs. exploitation mechanics.
 - **Build-Time Mechanics**: Source -> preprocessor -> compiler -> linker -> execution.
 - **Supply Chain Awareness**: Understanding what happens beneath `./configure && make`.
-
----
 
 ## Key Findings
 
@@ -38,7 +32,5 @@ Inspired by **[Andres Freund's](https://github.com/anarazel)** discovery of a 50
 - `LD_PRELOAD` allows shared libraries to override any function at runtime without modifying the target binary.
 - GOT entries can be overwritten at runtime using `mprotect()` to redirect any function call silently.
 - Shared libraries are loaded automatically by the dynamic linker — a backdoored `.so` runs before any application code.
-
----
 
 > *"System security is measured not only by code quality, but also by acute attention to low-level operational details."*
